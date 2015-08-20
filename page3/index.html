@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Sudarshan &middot; 
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Sudarshan Gaikaiwari's blog on everything under the sun.
+</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about.html">About</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Sudarshan</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/06/the-new-updated-windows-live-writer/">
+        The new Updated windows Live Writer
+      </a>
+    </h1>
+
+    <time datetime="2007-06-12T13:44:31-05:00" class="post-date">12 Jun 2007</time>
+
+    <p>Time to experiment again. This post was created with the latest version of Windows Live Writer.
+Here is an attempt at embedding code</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;;</span>
+
+<span class="cm">/* the n-th fibonacci number.</span>
+<span class="cm"> */</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">tmp</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">--</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%u&quot;</span><span class="p">,</span> <span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
+<span class="p">}</span></code></pre></div>
+
+
+<p>Since I had some problems entering code with the wysiwg editing capabilities of Wordpress I want to see if Live Writer does this better.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/05/cplusplu-function-resolution/">
+        C++ function resolution
+      </a>
+    </h1>
+
+    <time datetime="2007-05-24T07:37:53-05:00" class="post-date">24 May 2007</time>
+
+    <p>I earn my living writing C++ code these days. Everyday I learn something new and interesting about this language. Many languages have a simple core, if you understand a few basic principles you can understand how most of the language works. C++ has a lot of esoteric features and no guiding principles that to borrow a term from human computer interaction allow the programmer to develop expectations. I think the reasons for this are historical.
+Reading Lippman's Inside the C++ Object model and Stroustrup's Design and Evolution of the C++ Programming language I am amazed by how much attention was paid to match C in performance</p>
+
+<pre class="prettyprint">
+f() 
+{ 
+   a.f()      // resolved at compile time (not polymorphic)
+   p->f()     // resolved at runtime 
+}
+</pre>
+
+
+<p><br />
+The static resolution is a feature. The C++ compiler writers were trying to avoid the single instruction cost of vptr dereferencing. For a programmer this means that just marking a function as virtual does not mean that the most overriden version will be invoked. To ensure that every invocation must also be polymorphic. Also there is a principle at work here. You do not have to pay for what you do not use.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/05/asempra-product-review/">
+        Asempra Product Review
+      </a>
+    </h1>
+
+    <time datetime="2007-05-21T23:06:04-05:00" class="post-date">21 May 2007</time>
+
+    <p>I work at Asempra as a software developer. A few days ago I saw that someone came to this blog searching for "asempra product review". This blogpost is just to point such people to <a href="http://asempra.com">asempra.com.</a></p>
+
+<p>That being said I am surprised that this blog ranks high enough to be shown in the result sets for such a query.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/02/my-parents-went-to-leh-ladakh/">
+        My parents went to Leh Ladakh
+      </a>
+    </h1>
+
+    <time datetime="2007-02-17T01:12:46-06:00" class="post-date">17 Feb 2007</time>
+
+    <p>and all i got was this article ;-)</p>
+
+<p><img width="364" height="500" alt="Leh_Ladakh Article 1" src="http://farm1.static.flickr.com/170/392710241_e49b11b6ac.jpg" /></p>
+
+<p><img width="364" height="500" alt="Leh_ladakh Article 2" src="http://farm1.static.flickr.com/91/392710242_d5dcd1be29.jpg" /></p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/02/more-self-esteem/">
+        More Self Esteem
+      </a>
+    </h1>
+
+    <time datetime="2007-02-14T02:01:43-06:00" class="post-date">14 Feb 2007</time>
+
+    <p>From <a href="http://geniusblog.davidshenk.com/2007/02/overconfidence_.html">Overconfidence —> Incompetence Humility —> Success</a></p>
+
+<p>You don't want to be demoralizing, needlessly tearing at the fabric of your self-esteem, but at every turn, you do want to be saying: "Well, that's not quite good enough -- I can do better." In fact, it seems to me that you want to attach self-esteem to the <u>process</u> of becoming better, instead of letting it become attached to any static result. That way, you can be critical of a performance and not become demoralized about what it says about you as a person. The self-criticism actually becomes a self-esteem booster because you feel good about doing the hard work to constantly improve.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/01/the-south/">
+        The South
+      </a>
+    </h1>
+
+    <time datetime="2007-01-31T18:27:56-06:00" class="post-date">31 Jan 2007</time>
+
+    <blockquote>It's a place where some hicks <strong>still</strong> proudly fly a flag from a war they <em>lost</em> in order to <em>keep their slaves</em>.
+</blockquote>
+
+
+<p><cite> <a href="http://wilshipley.com/blog/2007/01/barack-strangelove-or-how-i-learned-to.html">Wil Shipley</a> </cite></p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/01/nationalism/">
+        Nationalism
+      </a>
+    </h1>
+
+    <time datetime="2007-01-27T17:50:26-06:00" class="post-date">27 Jan 2007</time>
+
+    <p>I think nationalism is a disease and it's a disease that has really hurt the world.</p>
+
+<p>Nicholas Negroponte</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/01/new-post-at-valleygeek/">
+        New post at Valleygeek
+      </a>
+    </h1>
+
+    <time datetime="2007-01-23T00:26:05-06:00" class="post-date">23 Jan 2007</time>
+
+    <p>go <a href="http://valleygeek.org/blog/2007/01/22/a-tale-of-two-keyboard-shortcut-systems/">check</a></p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/01/the-action-is-somewhere-else/">
+        The action is somewhere else
+      </a>
+    </h1>
+
+    <time datetime="2007-01-17T01:39:15-06:00" class="post-date">17 Jan 2007</time>
+
+    <p>Posting here is going to be even more infrequent. Check <a href="http://www.valleygeek.org">valleygeek.org</a> to see what I am upto.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/2007/01/scenario-simple-and-fast/">
+        Scenario, simple and Fast
+      </a>
+    </h1>
+
+    <time datetime="2007-01-10T23:46:24-06:00" class="post-date">10 Jan 2007</time>
+
+    <p>In Steve Job's keynote yesterday there was a mention of Jim Allchin's desire to buy a Mac. Today the context in which Allchin made that statement has been <a href="http://www.microsoft-watch.com/content/operating_systems/allchins_buy_a_mac_email_exposed.html?kc=MWRSS02129TX1K0000535">revealed</a>. In his email Allchin keeps reiterating "scenario, simple, fast'. Any software developer should take these words to heart. The order of these three words is also significant. The most important thing for any software is it's usage scenario.Usage scenario help in making the right tradeoffs while designing software. But for the few lucky people who write device drivers and are constrained by the operating system interface on one end and the device interface on the other, all other software developer need to pay a lot of attention to the design of the interface that their software presents. As far as the user is concerned the interface is the software. She does not care how extensible, modular the software is. Nor is she bothered if it uses the latest technology or is Web 2.0 compliant ;-). All the users want is to achieve their goals with the minimum effort.</p>
+
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page4">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page2">Newer</a>
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
