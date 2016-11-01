@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-01T06:43:44-05:00</updated><id>http://localhost:4000//</id><title type="html">Sudarshan Gaikaiwari’s blog</title><subtitle>Filling the unforgiving minute with sixty seconds’ worth of distance run
+</subtitle><entry><title type="html">Search Auto Complete</title><link href="http://localhost:4000/blog/2012/02/search-autocompletion/" rel="alternate" type="text/html" title="Search Auto Complete" /><published>2012-02-18T16:01:00-06:00</published><updated>2012-02-18T16:01:00-06:00</updated><id>http://localhost:4000/blog/2012/02/search-autocompletion</id><content type="html" xml:base="http://localhost:4000/blog/2012/02/search-autocompletion/">&lt;p&gt;The very first time a user inputs a key stroke in the search box his
+search experience can be enhanced by either providing query
+suggestions or performing type ahead queries and showing the results.&lt;/p&gt;
+
+&lt;p&gt;Google and Bing are examples of search systems providing query
+suggestions.&lt;/p&gt;
+
+&lt;p&gt;Below are the query suggestions presented by Google while searching
+for “Designing with the Mind in Mind”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/search_auto_1/google_query_completions.png&quot; alt=&quot;&quot; title=&quot;Google autocomplete&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the same query the user needs to type more characters in Bing to get the suggestion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/search_auto_1/bing_query_suggestions.png&quot; alt=&quot;&quot; title=&quot;Bing autocomplete&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Linkedin and Facebook are examples of search systems performing type
+ahead queries.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of type ahead search done on Linkedin while searching for “Yelp”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/search_auto_1/linkedin_typeahead_query.png&quot; alt=&quot;&quot; title=&quot;linkedin type ahead query&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Providing search suggestions is more appropriate for systems in which
+users engage in textual or keyword based queries, while type ahead
+queries work better when users are searching for well known entities.&lt;/p&gt;
+
+&lt;h2 id=&quot;benefits-of-search-suggest-systems&quot;&gt;Benefits of Search Suggest Systems&lt;/h2&gt;
+
+&lt;p&gt;Some of the benefits that users get from suggested queries are&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Spelling mistakes are avoided.&lt;/strong&gt;
+Words like “Ratatouille” are almost impossible to spell
+correctly. Most search systems are unforgiving of mistakes made while
+entering the query terms. By providing query suggestions we greatly improve
+the users chance of finding what he is looking for by eliminating a
+large class of spelling mistakes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fewer keys need to be typed.&lt;/strong&gt;
+Most users do not touch type. Every key press involves significant
+cognitive load on the user. By providing suggestions that can be
+easily selected we reduce the efforts that users must take to use the
+search system.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Suggestions provide immediate feedback in terms of what queries are possible.&lt;/strong&gt;
+Query suggestions also provide immediate feedback in terms of what
+kind of queries the search system is capable of serving. The presence
+of a suggestion indicates that the search system should provide a
+useful response to the query. The absence of a suggestion could often
+indicate that the system may not contain appropriate responses for the query.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;goals-for-search-suggest-systems&quot;&gt;Goals for search suggest systems.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Users should perceive that they are receiving the query suggestion
+instantaneously.&lt;/strong&gt;
+&lt;p&gt;
+&lt;figure class=&quot;quote&quot;&gt;&lt;blockquote&gt;&lt;p&gt;Maximum interval between events for perception that one event caused another event: 140 milliseconds (0.14 second) This interval is the deadline for perception of cause and effect. If an interactive system takes longer than 0.14 second to respond to your action, you won’t perceive your action as having caused the response. For example, if the echoing of characters you type lags more than 140 milliseconds behind your typing, then you will lose the perception that you are typing those characters. Your attention will be diverted away from the meaning of the text and toward the act of typing, which slows you down, pulls typing out of automatic processing and into conscious processing, and increases your chances of making an error.&lt;/p&gt;&lt;/blockquote&gt;&lt;figcaption class=&quot;quote-source&quot;&gt;&lt;span class=&quot;quote-author&quot;&gt;Jeff Johnson&lt;/span&gt;&lt;cite class=&quot;quote-title&quot;&gt;&lt;a class=&quot;quote-link&quot; href=&quot;http://www.amazon.com/gp/product/012375030X/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;tag=sudarshanorg-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=012375030X&quot;&gt;Designing with the Mind in Mind&lt;/a&gt;&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+From the above user must see the query suggestions
+within 150ms of pressing a key to perceive that they are
+instantaneous.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Suggestions should be ordered by likelihood of them being entered
+by the user.&lt;/strong&gt;
+&lt;p&gt;
+Most search suggest systems are built by performing analysis of logs
+of the search system. Queries are scored based on how frequently they
+are entered and if they resulted in clicks on the search results. High
+scoring queries become the candidates for suggestions. In addition
+the ranking of the suggestions can be personalized for a particular
+user. The rankings can also be modified based on the category of the
+suggestion. For example for a library ILS system suggestions for book
+titles can be ranked higher than suggestions for DVD titles during
+weekdays while on weekends DVD titles could be ranked higher.
+results. While suggestions should be presented in the order of their score
+there might be a benefit to re-ordering them so that if a suggestion
+is the first word of another suggestion but it ranks lower then it
+should still be presented first.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Completeness&lt;/strong&gt;
+&lt;p&gt;
+For a user to believe that the search suggestion systems is correctly
+guiding him it is important that the system be complete in terms of
+the suggestions that it provides. If a query has the potential of resulting in a search result with a
+high click through rate then that query should be provided as a
+suggestion when its prefix has been typed by the user.
+Here is an example of a search system that fails to do this.
+The user is searching for the book &quot;Lady Tasting Tea&quot; on Ebay. After
+typing &quot;lady ta&quot; he stops receiving suggestions.
+
+&lt;img src=&quot;/images/search_auto_1/ebay_suggestions.png&quot; alt=&quot;&quot; title=&quot;Ebay Suggestions&quot; /&gt;
+
+However when he completes the query he does find that Ebay sells the book.
+
+&lt;img src=&quot;/images/search_auto_1/ebay_results.png&quot; alt=&quot;&quot; title=&quot;Ebay Results&quot; /&gt;
+
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Correctness&lt;/strong&gt;
+&lt;p&gt;
+The query suggestions system should not provides suggestions which
+result in zero search results. Such suggestions reduce the users
+belief that the search auto complete system is correctly guiding his
+search exploration. It is indeed very rare to find a suggest system in
+production that does this.
+&lt;/p&gt;
+&lt;/li&gt;
+
+
+
+
+
+&lt;/ol&gt;</content><summary type="html">The very first time a user inputs a key stroke in the search box his
+search experience can be enhanced by either providing query
+suggestions or performing type ahead queries and showing the results.</summary></entry><entry><title type="html">javah jni error Illegal package name</title><link href="http://localhost:4000/blog/2009/11/javah-jni-error-illegal-package-name/" rel="alternate" type="text/html" title="javah jni error Illegal package name" /><published>2009-11-18T12:21:37-06:00</published><updated>2009-11-18T12:21:37-06:00</updated><id>http://localhost:4000/blog/2009/11/javah-jni-error-illegal-package-name</id><content type="html" xml:base="http://localhost:4000/blog/2009/11/javah-jni-error-illegal-package-name/">&lt;p&gt;The java class from which the header file is to be generated should not be provided as
+com\level1\level2\classname but as com.level1.level2.classname&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">The java class from which the header file is to be generated should not be provided as
+com\level1\level2\classname but as com.level1.level2.classname</summary></entry><entry><title type="html">John McAfee on rewards</title><link href="http://localhost:4000/blog/2009/08/john-mcafee-on-rewards/" rel="alternate" type="text/html" title="John McAfee on rewards" /><published>2009-08-24T13:52:34-05:00</published><updated>2009-08-24T13:52:34-05:00</updated><id>http://localhost:4000/blog/2009/08/john-mcafee-on-rewards</id><content type="html" xml:base="http://localhost:4000/blog/2009/08/john-mcafee-on-rewards/">&lt;blockquote&gt;
+Whatever the entrepreneur creates should be the reward, not just for the entrepreneur, but for everyone. I doubt that the inventor of the wheel made much money from it, but I don’t doubt that this person was internally rewarded &lt;/blockquote&gt;</content><category term="uncategorized" /><summary type="html">Whatever the entrepreneur creates should be the reward, not just for the entrepreneur, but for everyone. I doubt that the inventor of the wheel made much money from it, but I don’t doubt that this person was internally rewarded</summary></entry><entry><title type="html">The Entrepreneur</title><link href="http://localhost:4000/blog/2009/07/the-entrepreneur/" rel="alternate" type="text/html" title="The Entrepreneur" /><published>2009-07-26T16:41:09-05:00</published><updated>2009-07-26T16:41:09-05:00</updated><id>http://localhost:4000/blog/2009/07/the-entrepreneur</id><content type="html" xml:base="http://localhost:4000/blog/2009/07/the-entrepreneur/">&lt;blockquote&gt;
+The real question you have to ask yourself is, &quot;Are you willing to exist or are you going to be special? And special is not what someone else thinks of you but what you think of yourself.&quot;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Malcolm Bricklin&lt;/p&gt;
+
+&lt;p&gt;Must watch internet TV
+&lt;a href=&quot;http://www.snagfilms.com/films/title/the_entrepreneur&quot;&gt;The Entrepreneur&lt;/a&gt;&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">The real question you have to ask yourself is, &quot;Are you willing to exist or are you going to be special? And special is not what someone else thinks of you but what you think of yourself.&quot;</summary></entry><entry><title type="html">Motivation</title><link href="http://localhost:4000/blog/2009/03/motivation/" rel="alternate" type="text/html" title="Motivation" /><published>2009-03-26T23:47:36-05:00</published><updated>2009-03-26T23:47:36-05:00</updated><id>http://localhost:4000/blog/2009/03/motivation</id><content type="html" xml:base="http://localhost:4000/blog/2009/03/motivation/">&lt;blockquote&gt;
+We don’t make movies to make money, we make money to make more movies.
+&lt;/blockquote&gt;
+&lt;p&gt;Walt Disney&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">We don’t make movies to make money, we make money to make more movies.
+
+Walt Disney</summary></entry><entry><title type="html">The American Dream</title><link href="http://localhost:4000/blog/2008/12/the-american-dream/" rel="alternate" type="text/html" title="The American Dream" /><published>2008-12-03T10:28:24-06:00</published><updated>2008-12-03T10:28:24-06:00</updated><id>http://localhost:4000/blog/2008/12/the-american-dream</id><content type="html" xml:base="http://localhost:4000/blog/2008/12/the-american-dream/">&lt;blockquote&gt;
+ It is not a dream of motor cars and high wages merely, but a dream of social order in which each man and each woman shall be able to attain to the fullest stature of which they are innately capable, and be recognized by others for what they are, regardless of the fortuitous circumstances of birth or position.&lt;/blockquote&gt;
+
+&lt;p&gt;James Truslow Adams&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">It is not a dream of motor cars and high wages merely, but a dream of social order in which each man and each woman shall be able to attain to the fullest stature of which they are innately capable, and be recognized by others for what they are, regardless of the fortuitous circumstances of birth or position.</summary></entry><entry><title type="html">Terrorist attacks on Mumbai</title><link href="http://localhost:4000/blog/2008/11/terrorist-attacks-on-mumbai/" rel="alternate" type="text/html" title="Terrorist attacks on Mumbai" /><published>2008-11-26T18:39:10-06:00</published><updated>2008-11-26T18:39:10-06:00</updated><id>http://localhost:4000/blog/2008/11/terrorist-attacks-on-mumbai</id><content type="html" xml:base="http://localhost:4000/blog/2008/11/terrorist-attacks-on-mumbai/">&lt;p&gt;Today is indeed a sad day for me. I was born in Mumbai and still have most of my relatives living there.
+For the first time I feel ashamed of calling myself an Indian. How can India as a country allow this?
+Do we have no pride? How can these people come and attack us whenever they want? The bombers of 93 are still unpunished. A neighboring country harbors these terrorists and we are powerless to do anything about them. 
+As sad as I am I also have to accept my own complicit role in this state of affairs. A country’s wealth is not its natural resources but its people. After getting some of the best education that could be provided in the whole world I left India and came to the US. I and every Indian who has looked away and decided to leave government and politics to criminals is equally to blame.&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">Today is indeed a sad day for me. I was born in Mumbai and still have most of my relatives living there.
+For the first time I feel ashamed of calling myself an Indian. How can India as a country allow this?
+Do we have no pride? How can these people come and attack us whenever they want? The bombers of 93 are still unpunished. A neighboring country harbors these terrorists and we are powerless to do anything about them. 
+As sad as I am I also have to accept my own complicit role in this state of affairs. A country’s wealth is not its natural resources but its people. After getting some of the best education that could be provided in the whole world I left India and came to the US. I and every Indian who has looked away and decided to leave government and politics to criminals is equally to blame.</summary></entry><entry><title type="html">Is Programming exciting?</title><link href="http://localhost:4000/blog/2008/10/is-programming-exciting/" rel="alternate" type="text/html" title="Is Programming exciting?" /><published>2008-10-27T10:44:55-05:00</published><updated>2008-10-27T10:44:55-05:00</updated><id>http://localhost:4000/blog/2008/10/is-programming-exciting</id><content type="html" xml:base="http://localhost:4000/blog/2008/10/is-programming-exciting/">&lt;blockquote&gt;Also, many a programmer derives a major part of his professional excitement from not quite understanding what he is doing, from the daring risks he takes and from the struggle to find the bugs he should not have introduced in the first place.&lt;/blockquote&gt;
+&lt;p&gt;E.W. Dijkstra&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">Also, many a programmer derives a major part of his professional excitement from not quite understanding what he is doing, from the daring risks he takes and from the struggle to find the bugs he should not have introduced in the first place.
+E.W. Dijkstra</summary></entry><entry><title type="html">Stockdale Paradox</title><link href="http://localhost:4000/blog/2008/10/stockdale-paradox/" rel="alternate" type="text/html" title="Stockdale Paradox" /><published>2008-10-16T14:12:03-05:00</published><updated>2008-10-16T14:12:03-05:00</updated><id>http://localhost:4000/blog/2008/10/stockdale-paradox</id><content type="html" xml:base="http://localhost:4000/blog/2008/10/stockdale-paradox/">&lt;blockquote&gt;
+“You must never confuse faith that you will prevail in the end – which you can never afford to lose – with the discipline to confront the most brutal facts of your current reality, whatever they might be.”
+&lt;/blockquote&gt;</content><category term="uncategorized" /><summary type="html">“You must never confuse faith that you will prevail in the end – which you can never afford to lose – with the discipline to confront the most brutal facts of your current reality, whatever they might be.”</summary></entry><entry><title type="html">New personal blog</title><link href="http://localhost:4000/blog/2008/09/new-personal-blog/" rel="alternate" type="text/html" title="New personal blog" /><published>2008-09-16T19:37:53-05:00</published><updated>2008-09-16T19:37:53-05:00</updated><id>http://localhost:4000/blog/2008/09/new-personal-blog</id><content type="html" xml:base="http://localhost:4000/blog/2008/09/new-personal-blog/">&lt;p&gt;All interesting news moved &lt;a href=&quot;http://smgtji.blogspot.com&quot;&gt;here&lt;/a&gt;. Only technical stuff here from now on&lt;/p&gt;</content><category term="uncategorized" /><summary type="html">All interesting news moved here. Only technical stuff here from now on</summary></entry></feed>

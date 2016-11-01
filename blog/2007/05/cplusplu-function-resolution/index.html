@@ -11,7 +11,7 @@
 
   <title>
     
-      C++ function resolution &middot; Sudarshan
+      C++ function resolution &middot; Sudarshan Gaikaiwari's blog
     
   </title>
 
@@ -39,7 +39,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>Sudarshan Gaikaiwari's blog on everything under the sun.
+    <p>Filling the unforgiving minute with sixty seconds’ worth of distance run
 </p>
   </div>
 
@@ -52,12 +52,16 @@
     
       
         
-          <a class="sidebar-nav-item" href="/about.html">About</a>
-        
       
     
       
         
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
       
     
       
@@ -106,7 +110,7 @@
 
   <div class="sidebar-item">
     <p>
-      &copy; 2015. All rights reserved.
+      &copy; 2016. All rights reserved.
     </p>
   </div>
 </div>
@@ -118,7 +122,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Sudarshan</a>
+            <a href="/" title="Home">Sudarshan Gaikaiwari's blog</a>
             <small></small>
           </h3>
         </div>
@@ -129,17 +133,14 @@
   <h1 class="post-title">C++ function resolution</h1>
   <span class="post-date">24 May 2007</span>
   <p>I earn my living writing C++ code these days. Everyday I learn something new and interesting about this language. Many languages have a simple core, if you understand a few basic principles you can understand how most of the language works. C++ has a lot of esoteric features and no guiding principles that to borrow a term from human computer interaction allow the programmer to develop expectations. I think the reasons for this are historical.
-Reading Lippman's Inside the C++ Object model and Stroustrup's Design and Evolution of the C++ Programming language I am amazed by how much attention was paid to match C in performance</p>
-
+Reading Lippman’s Inside the C++ Object model and Stroustrup’s Design and Evolution of the C++ Programming language I am amazed by how much attention was paid to match C in performance</p>
 <pre class="prettyprint">
 f() 
 { 
    a.f()      // resolved at compile time (not polymorphic)
-   p->f()     // resolved at runtime 
+   p-&gt;f()     // resolved at runtime 
 }
 </pre>
-
-
 <p><br />
 The static resolution is a feature. The C++ compiler writers were trying to avoid the single instruction cost of vptr dereferencing. For a programmer this means that just marking a function as virtual does not mean that the most overriden version will be invoked. To ensure that every invocation must also be polymorphic. Also there is a principle at work here. You do not have to pay for what you do not use.</p>
 
@@ -201,5 +202,16 @@ The static resolution is a feature. The C++ compiler writers were trying to avoi
         }, false);
       })(document);
     </script>
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-323700-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
   </body>
 </html>
